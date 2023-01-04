@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif&family=Noto+Serif+Display:wght@100;200&family=Playfair+Display&family=Source+Serif+Pro:wght@300&display=swap");
+/* Playfair Display, Noto serif, Source Serif Pro, Abril fat face */
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Noto Serif', serif;
+font-family: 'Noto Serif Display', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Source Serif Pro', serif; */
+
+html {
+  --text: #fff;
+  --hover: rgb(82, 82, 124);
+  --background: black;
+  --font: "Noto Serif Display";
+  --opacity: 60%;
+}
+
+* {
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+ul,
+li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--text);
+}
+
+a:hover {
+  color: var(--hover);
+}
+
+img {
+  height: 100%;
+  display: block;
+  width: 100%;
+}
