@@ -1,0 +1,80 @@
+a {
+  color: blue;
+  display: block;
+  opacity: 0.7;
+}
+
+.nav-portfolie {
+  position: absolute;
+  top: 1%;
+  right: 20%;
+  font-size: 2vw;
+}
+.nav-ommig {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  font-size: 2vw;
+}
+
+.nav-forside {
+  position: absolute;
+  top: 1%;
+  right: 36%;
+  font-size: 2vw;
+}
+
+/* ----- JS animation hover ----- */
+#js-menu {
+  margin: 10% 0 0 12%;
+}
+
+.portfolio-menu {
+  opacity: 0.7;
+  font-size: 4vw;
+  transition: font-size 0.2s;
+  margin-top: 20px;
+}
+
+.hovered {
+  font-size: 5.5vw; /* during hover */
+  opacity: 1;
+  font-weight: bold;
+}
+
+.sibling-hovered {
+  font-size: 4.5vw; /* affects siblings */
+}
+
+/* ------- ringe design --------- */
+.menu {
+  position: relative;
+}
+
+.oval-1 {
+  position: fixed;
+
+  width: 200px;
+  height: 100px; /* as the half of the width */
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 10px solid white;
+  border-bottom: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 10% 0 10%;
+}
+
+@media (max-width: 600px) {
+  .js-menu {
+    height: 200px;
+    width: 18%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
