@@ -10,8 +10,7 @@ html {
   --text: #fff;
   --hover: rgb(82, 82, 124);
   --background: black;
-  --font: "Noto Serif Display";
-  --opacity: 60%;
+  --font: "Playfair Display";
 }
 
 * {
@@ -28,8 +27,14 @@ li a {
   list-style-type: none;
   color: var(--text);
 }
-p {
-  color: var(--text);
+a {
+  text-decoration: none;
+}
+nav {
+  opacity: 0.7;
+}
+p,
+a {
   opacity: 0.7;
 }
 
@@ -38,10 +43,33 @@ a,
 h1,
 h2 {
   color: var(--text);
+  font-weight: lighter;
 }
 
 img {
   height: 100%;
   display: block;
   width: 100%;
+}
+.nav-portfolie {
+  position: absolute;
+  top: 1%;
+  right: 20%;
+  font-size: 2vw;
+}
+.nav-ommig {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  font-size: 2vw;
+}
+
+.nav-forside {
+  position: absolute;
+  top: 1%;
+  right: 36%;
+  font-size: 2vw;
+}
+.box {
+  margin-inline: 10%;
 }
