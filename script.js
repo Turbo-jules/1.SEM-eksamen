@@ -26,5 +26,3 @@ portfolioMenu.forEach((menuItem) => {
     }
   });
 });
-
-/*----- ringe ---- */
