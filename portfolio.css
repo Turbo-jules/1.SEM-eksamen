@@ -144,7 +144,7 @@ main {
 .spilleskaerm {
   object-fit: cover;
 }
-#t2-col-1 {
+.t2-col-1 {
   grid-row: span 2;
   max-height: 100%;
 }
