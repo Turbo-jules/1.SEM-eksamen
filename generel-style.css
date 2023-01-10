@@ -8,9 +8,13 @@ font-family: 'Source Serif Pro', serif; */
 
 html {
   --text: #fff;
-  --hover: rgb(82, 82, 124);
+  --shadow: #d0cdee;
   --background: black;
   --font: "Playfair Display";
+}
+a:hover {
+  color: var(--text);
+  opacity: 1;
 }
 
 * {
@@ -73,3 +77,64 @@ img {
 .box {
   margin-inline: 10%;
 }
+/* ----------- intro ---------*/
+.container-intro {
+  position: relative;
+  margin-top: 100px;
+  width: auto;
+  height: 300px;
+}
+
+.intro {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  text-transform: uppercase;
+  font-size: 4vw;
+  letter-spacing: 0.15em;
+  gap: 20px;
+}
+.navn {
+  padding-left: 8%;
+  font-size: 3vw;
+  white-space: nowrap;
+  background: transparent;
+}
+
+@media (max-width: 600px) {
+  /*----- ringe ----*/
+
+  .container-intro {
+    position: relative;
+    margin-top: 60px;
+    width: auto;
+    height: 200px;
+  }
+  .intro {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    text-transform: uppercase;
+    font-size: 4vw;
+    letter-spacing: 0.15em;
+    gap: 20px;
+  }
+  .navn {
+    padding-left: 8%;
+    font-size: 3vw;
+  }
+}
+
+/* ---------- */
+/*
+  .oval-top {
+    box-shadow: inset 0 0 1em var(--shadow), 0 0 1em var(--shadow);
+  }
+  .oval-bottom1 {
+    box-shadow: inset 0 0 1em var(--shadow), 0 0 1em var(--shadow);
+  }
+  .oval-bottom2 {
+    box-shadow: inset 0 0 1em var(--shadow), 0 0 1em var(--shadow);
+  }
+
+  */

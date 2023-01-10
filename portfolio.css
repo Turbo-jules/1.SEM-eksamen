@@ -2,6 +2,14 @@
 #js-menu {
   margin: 10% 0 0 12%;
 }
+/* ---------- specielle placeringer ----*/
+#menu-li-2,
+#menu-li-4 {
+  padding-left: 25px;
+}
+#menu-li-3 {
+  padding-left: 50px;
+}
 
 .portfolio-menu {
   font-size: 4vw;
@@ -19,34 +27,206 @@
   font-size: 4.5vw; /* affects siblings */
 }
 
-/* ------- ringe design --------- */
 .menu {
   position: relative;
 }
-/*
-.oval-1 {
-  position: absolute;
-  width: 200px;
-  height: 100px;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  border: 10px solid white;
-  border-bottom: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*/
+
 p,
 h2 {
   margin-top: 20px;
+  background: transparent;
 }
 
 .tema-2 {
   margin-top: 200px;
 }
+a {
+  text-decoration-line: underline;
+}
 
-@media (max-width: 600px) {
+/* -------------------- Ringe ------------------*/
+main {
+  overflow: hidden;
+}
+.box {
+  position: relative;
+  margin-bottom: 25%;
+}
+.oval-top {
+  position: absolute;
+  background: transparent;
+
+  height: 162%;
+  width: 37%;
+  top: -31%;
+  left: -25%;
+
+  border-radius: 50%;
+  box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
+}
+/*--------- ringe - bund --------- */
+
+.oval-bottom1 {
+  position: absolute;
+  background: transparent;
+
+  height: 8%;
+  width: 47%;
+  top: 4%;
+  right: -46%;
+
+  border-radius: 50%;
+  box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
+}
+
+.oval-bottom2 {
+  position: absolute;
+  background: transparent;
+
+  height: 7.2%;
+  width: 42%;
+  top: 1.7%;
+  right: -46%;
+
+  border-radius: 50%;
+  box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
+}
+.oval-bottom3 {
+  position: absolute;
+  background: transparent;
+
+  height: 8%;
+  width: 32%;
+  top: 55%;
+  left: -34%;
+
+  border-radius: 50%;
+  box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
+}
+
+.oval-bottom4 {
+  position: absolute;
+  background: transparent;
+
+  height: 4%;
+  width: 20%;
+  top: 61%;
+  left: -26%;
+
+  border-radius: 50%;
+  box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
+}
+.oval-bottom5 {
+  position: absolute;
+  background: transparent;
+
+  height: 7.2%;
+  width: 76%;
+  bottom: -7%;
+  right: -39%;
+
+  border-radius: 50%;
+  box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
+}
+
+.oval-bottom6 {
+  position: absolute;
+  background: transparent;
+
+  height: 6%;
+  width: 101%;
+  bottom: -8%;
+  right: -39%;
+
+  border-radius: 50%;
+  box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
+}
+/* ------------ grid --------- */
+.col-t2,
+.col-t3-1,
+.col-t3-2,
+.col-t4,
+.col-t5,
+.col-t6 {
+  gap: 20px;
+  padding-block: 20px;
+}
+.col-t2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col-t4 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+}
+.tandfe,
+.spilleskaerm {
+  object-fit: cover;
+}
+#t2-col-1 {
+  grid-row: span 2;
+  max-height: 100%;
+}
+.col-t3-1,
+.col-t3-2,
+.col-t3-3 {
+  display: grid;
+}
+
+/* ---- item 2 --- */
+
+.item2:first-of-type {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+}
+.item2:last-of-type {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+
+/* ----- item 1 ----- */
+
+.item1:first-of-type {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.item1:last-of-type {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.col-t5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-block: 20px;
+}
+
+.col-t6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-block: 20px;
+}
+/* ------ animation ---- */
+.tandfe {
+  animation-name: tandfe_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: ease-in-out;
+}
+@keyframes tandfe_kf {
+  0% {
+    translate: 0;
+  }
+  50% {
+    translate: 0% 3%;
+  }
+}
+/*------------------ meadia ----------------*/
+
+@media (max-width: 800px) {
   .nav-portfolie,
   .nav-forside,
   .nav-ommig {
@@ -60,5 +240,55 @@ h2 {
   }
   .tema-2 {
     margin-top: 100px;
+  }
+  /* ------ ringe ----- */
+  .oval-top {
+    box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
+  }
+  .oval-bottom1 {
+    height: 4%;
+    width: 47%;
+    top: 3%;
+    right: -46%;
+    box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
+  }
+  .oval-bottom2 {
+    height: 3.2%;
+    width: 42%;
+    top: 1.7%;
+    right: -46%;
+
+    box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
+  }
+  .oval-bottom3 {
+    height: 4%;
+    width: 32%;
+    top: 57%;
+    left: -34%;
+    box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
+  }
+  .oval-bottom4 {
+    height: 2%;
+    width: 20%;
+    top: 60%;
+    left: -26%;
+
+    box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
+  }
+  .oval-bottom5 {
+    height: 4.2%;
+    width: 76%;
+    bottom: -4%;
+    right: -39%;
+
+    box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
+  }
+  .oval-bottom6 {
+    height: 4%;
+    width: 112%;
+    bottom: -4.5%;
+    right: -39%;
+
+    box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
   }
 }
