@@ -36,6 +36,9 @@ h2 {
   margin-top: 20px;
   background: transparent;
 }
+h2 {
+  margin-top: 80px;
+}
 
 .tema-2 {
   margin-top: 200px;
@@ -44,7 +47,7 @@ a {
   text-decoration-line: underline;
 }
 
-/* -------------------- Ringe ------------------*/
+/* -------------------- Ring - top ------------------*/
 main {
   overflow: hidden;
 }
@@ -72,7 +75,7 @@ main {
 
   height: 8%;
   width: 47%;
-  top: 4%;
+  top: 16%;
   right: -46%;
 
   border-radius: 50%;
@@ -85,37 +88,13 @@ main {
 
   height: 7.2%;
   width: 42%;
-  top: 1.7%;
+  top: 12.7%;
   right: -46%;
 
   border-radius: 50%;
   box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
 }
-.oval-bottom3 {
-  position: absolute;
-  background: transparent;
 
-  height: 8%;
-  width: 32%;
-  top: 55%;
-  left: -34%;
-
-  border-radius: 50%;
-  box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
-}
-
-.oval-bottom4 {
-  position: absolute;
-  background: transparent;
-
-  height: 4%;
-  width: 20%;
-  top: 61%;
-  left: -26%;
-
-  border-radius: 50%;
-  box-shadow: inset 0 0 3em var(--shadow), 0 0 3em var(--shadow);
-}
 .oval-bottom5 {
   position: absolute;
   background: transparent;
@@ -143,15 +122,15 @@ main {
 }
 /* ------------ grid --------- */
 .col-t2,
-.col-t3-1,
-.col-t3-2,
 .col-t4,
 .col-t5,
-.col-t6 {
+.col-t6,
+.col-2 {
   gap: 20px;
   padding-block: 20px;
 }
-.col-t2 {
+.col-t2,
+.col-t5-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -169,21 +148,14 @@ main {
   grid-row: span 2;
   max-height: 100%;
 }
-.col-t3-1,
-.col-t3-2,
-.col-t3-3 {
+
+.col-2 {
   display: grid;
 }
-
-/* ---- item 2 --- */
-
-.item2:first-of-type {
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 2;
-}
-.item2:last-of-type {
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 2;
+.col-t5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-block: 20px;
 }
 
 /* ----- item 1 ----- */
@@ -197,12 +169,6 @@ main {
   grid-row: 2 / span 2;
 }
 
-.col-t5 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-block: 20px;
-}
-
 .col-t6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -210,6 +176,7 @@ main {
 }
 /* ------ animation ---- */
 .tandfe {
+  background: transparent;
   animation-name: tandfe_kf;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -226,7 +193,7 @@ main {
 }
 /*------------------ meadia ----------------*/
 
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .nav-portfolie,
   .nav-forside,
   .nav-ommig {
@@ -241,6 +208,18 @@ main {
   .tema-2 {
     margin-top: 100px;
   }
+  /* ----- col ------ */
+  .col-t2,
+  .col-t4,
+  .col-t5 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .tandfe {
+    max-width: 200px;
+    margin-inline: auto;
+  }
+
   /* ------ ringe ----- */
   .oval-top {
     box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
@@ -260,25 +239,11 @@ main {
 
     box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
   }
-  .oval-bottom3 {
-    height: 4%;
-    width: 32%;
-    top: 57%;
-    left: -34%;
-    box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
-  }
-  .oval-bottom4 {
-    height: 2%;
-    width: 20%;
-    top: 60%;
-    left: -26%;
 
-    box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
-  }
   .oval-bottom5 {
-    height: 4.2%;
-    width: 76%;
-    bottom: -4%;
+    height: 4%;
+    width: 90%;
+    bottom: -4.1%;
     right: -39%;
 
     box-shadow: inset 0 0 1.5em var(--shadow), 0 0 1.5em var(--shadow);
